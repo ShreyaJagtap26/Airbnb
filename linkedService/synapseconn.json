@@ -1,0 +1,14 @@
+{
+	"name": "synapseconn",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDW",
+		"typeProperties": {
+			"server": "airbnb-synapse-ws.sql.azuresynapse.net",
+			"database": "dedicatedsqlpool",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SystemAssignedManagedIdentity"
+		}
+	}
+}
