@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "airbnb-data-factory-1"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"cosmosdbcon_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://synapseprimarygds1.dfs.core.windows.net/"
+		},
+		"synapseconn_properties_typeProperties_server": {
+			"value": "airbnb-synapse-ws.sql.azuresynapse.net"
+		},
+		"synapseconn_properties_typeProperties_database": {
+			"value": "dedicatedsqlpool"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
