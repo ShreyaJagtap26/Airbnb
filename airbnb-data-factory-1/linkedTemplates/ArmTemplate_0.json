@@ -897,13 +897,13 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/Finalairbnbpipeline')]",
+			"name": "[concat(parameters('factoryName'), '/FinalAirbnbpipeline')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"activities": [
 					{
-						"name": "Runloadcustomerdim",
+						"name": "Loadcustomerdim",
 						"type": "ExecutePipeline",
 						"dependsOn": [],
 						"policy": {
@@ -920,11 +920,11 @@
 						}
 					},
 					{
-						"name": "Runbookingfact",
+						"name": "loadbookingfact",
 						"type": "ExecutePipeline",
 						"dependsOn": [
 							{
-								"activity": "Runloadcustomerdim",
+								"activity": "Loadcustomerdim",
 								"dependencyConditions": [
 									"Succeeded"
 								]
